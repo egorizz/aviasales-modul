@@ -1,0 +1,71 @@
+
+
+
+
+@media  screen and (max-width: 960px) {
+    .app-aviasales {
+  
+        background-color: rgba(243, 247, 250, 1);
+        width: 100%;
+    
+
+        min-height: 100%;
+        margin: 0 auto;
+
+        min-height: 100vh;
+        padding-top: 32px;
+
+        overflow: hidden;
+        
+    
+    }
+    
+    
+    .app-aviasales__logo {
+        background-image: url('./Logo.svg');
+        width: 90px;
+        height: 90px;
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+    }
+
+
+}
+
+
+
+
+
+
+@media  screen and (min-width: 960px) {
+    .app-aviasales {
+  
+        background-color: rgba(243, 247, 250, 1);
+        width: 960px;
+    
+        margin: 0 auto;
+        padding-top: 32px;
+        min-height: 100vh;
+        
+    }
+    
+    
+    .app-aviasales__logo {
+        background-image: url('./Logo.svg');
+        width: 90px;
+        height: 90px;
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+    }
+    .app-aviasales__main {
+
+        padding-left: 272px;
+        position: relative;
+
+    }
+}
+

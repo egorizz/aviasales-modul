@@ -1,0 +1,214 @@
+@font-face {
+    font-family: "Medium";
+    src: url("OpenSans-Medium.ttf") format("truetype");
+    font-weight: 900;
+}
+
+
+
+* {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .filter__tab {
+   
+        display: inline-block;
+        text-align: center;
+        height: 50px;
+        padding-left: 8px;
+        padding-right: 8px;
+        line-height: 20px;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        font-family: "Medium", Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        color: rgba(74, 74, 74, 1);
+        box-sizing: border-box;
+        
+    }
+    
+    .filter__tab:nth-child(1) {
+        border: 1px solid rgba(223, 229, 236, 1);
+    
+        box-sizing: border-box;
+        border-radius: 4px 0 0 4px;
+        background-color: white;
+        width: 32%;
+        padding-top: 4px;
+        
+        
+    }
+    .filter__tab:nth-child(2) {
+        border-right: 1px solid rgba(223, 229, 236, 1);
+        border-top: 1px solid rgba(223, 229, 236, 1);
+        border-bottom: 1px solid rgba(223, 229, 236, 1);
+        background-color: white;
+        width: 32%;
+        padding-top: 4px;
+    
+    }
+    .filter__tab:last-child {
+        border-radius: 0 4px 4px 0;
+        border-top: 1px solid rgba(223, 229, 236, 1);
+        border-bottom: 1px solid rgba(223, 229, 236, 1);
+        border-right: 1px solid rgba(223, 229, 236, 1);
+        background-color: white;
+        width: 40%;
+        padding-top: 14px;
+    }
+
+    
+}
+
+
+
+
+@media screen and (max-width: 960px) {
+    
+    
+.filter {
+
+
+    width: 90%;
+    max-width: 502px;
+    min-width: 320px;
+
+    height: auto;
+    min-height: 50px;
+    
+    overflow: hidden;
+    box-sizing: border-box;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+
+
+    display: flex;
+    
+    flex-direction: row;
+    
+}
+
+.filter__tab {
+    width: 33.333%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 14px;
+    line-height: 20px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-family: "Medium", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: rgba(74, 74, 74, 1);
+    box-sizing: border-box;
+
+
+}
+
+.filter__tab:nth-child(1) {
+    border: 1px solid rgba(223, 229, 236, 1);
+
+    box-sizing: border-box;
+    border-radius: 4px 0 0 4px;
+    background-color: white;
+    
+    
+}
+.filter__tab:nth-child(2) {
+    border-right: 1px solid rgba(223, 229, 236, 1);
+    border-top: 1px solid rgba(223, 229, 236, 1);
+    border-bottom: 1px solid rgba(223, 229, 236, 1);
+    background-color: white;
+
+}
+.filter__tab:last-child {
+    border-radius: 0 4px 4px 0;
+    border-top: 1px solid rgba(223, 229, 236, 1);
+    border-bottom: 1px solid rgba(223, 229, 236, 1);
+    border-right: 1px solid rgba(223, 229, 236, 1);
+    background-color: white;
+}
+
+.filter__tab:hover, .filter__tab:focus {
+    background-color: rgba(33, 150, 243, 1);
+    border: 1px solid rgba(33, 150, 243, 1);
+    color: white;
+
+    
+}
+}
+
+@media screen and (min-width: 960px) {
+    
+    
+.filter {
+
+
+    width: 502px;
+    height: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+
+    display: flex;
+    
+    flex-direction: row;
+    
+}
+
+.filter__tab {
+    width: 168px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 14px;
+    line-height: 20px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-family: "Medium", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: rgba(74, 74, 74, 1);
+
+}
+
+.filter__tab:nth-child(1) {
+    border: 1px solid rgba(223, 229, 236, 1);
+
+    box-sizing: border-box;
+    border-radius: 4px 0 0 4px;
+    background-color: white;
+    
+    
+}
+.filter__tab:nth-child(2) {
+    border-right: 1px solid rgba(223, 229, 236, 1);
+    border-top: 1px solid rgba(223, 229, 236, 1);
+    border-bottom: 1px solid rgba(223, 229, 236, 1);
+    background-color: white;
+
+}
+.filter__tab:last-child {
+    border-radius: 0 4px 4px 0;
+    border-top: 1px solid rgba(223, 229, 236, 1);
+    border-bottom: 1px solid rgba(223, 229, 236, 1);
+    border-right: 1px solid rgba(223, 229, 236, 1);
+    background-color: white;
+}
+
+.filter__tab:hover, .filter__tab:focus {
+    background-color: rgba(33, 150, 243, 1);
+    border: 1px solid rgba(33, 150, 243, 1);
+    color: white;
+
+    
+}
+}

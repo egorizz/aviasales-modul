@@ -1,0 +1,273 @@
+@font-face {
+    font-family: Regular;
+    src: url('./OpenSans-Regular.ttf') format('truetype');
+}
+
+@media screen and (max-width: 500px) {
+
+    .filter-options {
+        min-width: 320px;
+        max-width: 502px;
+        width: 90%;
+        height: auto;
+        border-radius: 4px;
+        background-color: white;
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        overflow: hidden;
+        padding-top: 20px;
+        display: block;
+
+    }
+
+    .filter-options__body {
+        min-width: 320px;
+        max-width: 502px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 8px;
+
+    }
+    
+    .filter-options__option {
+
+        display: inline-block;
+        width: 50%;
+        height: 42px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    
+    }
+    
+    .filter-options__checkbox {
+        height: 20px;
+        width: 20px;
+        border: 1px solid rgba(154, 187, 206, 1);
+        border-radius: 2px;
+        margin-left: 20px;
+    
+    }
+    
+    .filter-options__option:hover {
+        background-color: rgba(241, 252, 255, 1);
+        
+    }
+    
+    .checked  {
+        border: 1px solid rgba(33, 150, 243, 1);
+        background-image: url('./Shape.svg');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    
+    .filter-options__label {
+        margin-left: 12px;
+        font-size: 13px;
+        line-height: 20px;
+        font-family: "Regular", Arial, Helvetica, sans-serif;
+        color: rgba(74, 74, 74, 1);
+    }
+    
+    
+    
+    .filter-options__header {
+        width: 192px;
+        height: 12px;
+        text-align: left;
+        line-height: 12px;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        font-family: "Regular", Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        color: rgba(74, 74, 74, 1);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    
+    }
+}
+
+@media  screen and (max-width: 960px) and (min-width: 500px) {
+    .filter-options {
+
+        max-width: 502px;
+
+        width: 90%;
+        height: auto;
+        border-radius: 4px;
+        background-color: white;
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        overflow: hidden;
+        padding-top: 20px;
+        display: block;
+        
+    
+    
+    }
+
+    .filter-options__body {
+        min-width: 320px;
+        max-width: 502px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 8px;
+
+    }
+    
+    .filter-options__option {
+        display: inline-block;
+        width: 33.3%;
+        min-width: 140px;
+        height: 42px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    
+    }
+
+  
+    
+    .filter-options__checkbox {
+        height: 20px;
+        width: 20px;
+        border: 1px solid rgba(154, 187, 206, 1);
+        border-radius: 2px;
+        margin-left: 20px;
+    
+    }
+    
+    .filter-options__option:hover {
+        background-color: rgba(241, 252, 255, 1);
+        
+    }
+    
+    .checked  {
+        border: 1px solid rgba(33, 150, 243, 1);
+        background-image: url('./Shape.svg');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    
+    .filter-options__label {
+        margin-left: 12px;
+        font-size: 13px;
+        line-height: 20px;
+        font-family: "Regular", Arial, Helvetica, sans-serif;
+        color: rgba(74, 74, 74, 1);
+    }
+    
+    
+    
+    .filter-options__header {
+        width: 192px;
+        height: 12px;
+        text-align: left;
+        line-height: 12px;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        font-family: "Regular", Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        color: rgba(74, 74, 74, 1);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    
+    }
+}
+
+@media screen and (min-width: 960px) {
+
+    .filter-options {
+        width: 232px;
+        height: 252px;
+        border-radius: 4px;
+        background-color: white;
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        padding-top: 20px;
+        display: block;
+        position: absolute;
+        left: 112px;
+        top: 0px;
+    
+        
+    
+    
+    }
+    
+    .filter-options__option {
+        width: 232px;
+        height: 42px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    
+    }
+    
+    .filter-options__checkbox {
+        height: 20px;
+        width: 20px;
+        border: 1px solid rgba(154, 187, 206, 1);
+        border-radius: 2px;
+        margin-left: 20px;
+    
+    }
+    
+    .filter-options__option:hover {
+        background-color: rgba(241, 252, 255, 1);
+        
+    }
+    
+    .checked  {
+        border: 1px solid rgba(33, 150, 243, 1);
+        background-image: url('./Shape.svg');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    
+    .filter-options__label {
+        margin-left: 12px;
+        font-size: 13px;
+        line-height: 20px;
+        font-family: "Regular", Arial, Helvetica, sans-serif;
+        color: rgba(74, 74, 74, 1);
+    }
+    
+    
+    
+    .filter-options__header {
+        width: 192px;
+        height: 12px;
+        text-align: left;
+        line-height: 12px;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        font-family: "Regular", Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        color: rgba(74, 74, 74, 1);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    
+    }
+}
+
