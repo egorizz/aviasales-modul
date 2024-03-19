@@ -72,10 +72,10 @@
     .ticket__logo {
         height: 36px;
         width: 110px;
-        background-image: url('./S7.jpg');
+
     }
     
-    .ticket__flight-info {
+    .ticket__segment {
         width: 90%;
         height: 38px;
         margin: 16px auto 0 auto;
@@ -230,10 +230,10 @@
     .ticket__logo {
         height: 36px;
         width: 110px;
-        background-image: url('./S7.jpg');
+
     }
     
-    .ticket__flight-info {
+    .ticket__segment {
         width: 462px;
         height: 38px;
         margin: 16px auto 0 auto;

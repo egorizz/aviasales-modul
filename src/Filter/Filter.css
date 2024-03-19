@@ -137,14 +137,9 @@
     background-color: white;
 }
 
-.filter__tab:hover, .filter__tab:focus {
-    background-color: rgba(33, 150, 243, 1);
-    border: 1px solid rgba(33, 150, 243, 1);
-    color: white;
 
-    
 }
-}
+
 
 @media screen and (min-width: 960px) {
     
@@ -204,11 +199,11 @@
     background-color: white;
 }
 
-.filter__tab:hover, .filter__tab:focus {
+}
+
+
+.filter__tab-checked {
     background-color: rgba(33, 150, 243, 1);
     border: 1px solid rgba(33, 150, 243, 1);
     color: white;
-
-    
-}
 }
