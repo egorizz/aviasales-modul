@@ -4,22 +4,24 @@
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
+    "@csstools/postcss-progressive-custom-properties": "^3.1.1",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.9.1",
+    "postcss-color-functional-notation": "^6.0.7",
     "react": "^18.2.0",
+    "react-detect-offline": "^2.4.5",
     "react-dom": "^18.2.0",
-    "react-redux": "^8.1.2",
     "react-scripts": "5.0.1",
-    "redux": "^4.2.1",
-    "redux-thunk": "^2.4.2",
+    "redux-devtools-extension": "^2.13.9",
+    "thunk": "^0.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "lint": "eslint ./src",
-    "lint:fix": "eslint src --fix",
+    "lint:fix": "eslint ./src --fix",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -59,9 +61,13 @@
     "eslint-plugin-react": "^7.33.2",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
-    "prettier": "^3.0.3"
+    "postcss-preset-env": "^9.5.2",
+    "prettier": "^3.0.3",
+    "react-redux": "^8.1.2",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2"
   },
-    "husky": {
+  "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
@@ -72,5 +78,4 @@
       "git add"
     ]
   }
-
 }

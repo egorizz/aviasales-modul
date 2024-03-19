@@ -1,29 +1,31 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
 
 import Ticket from '../Ticket';
 import FiveMoreButton from '../FiveMoreButton';
 
-const TicketList = ({ tickets }) => {
-  const [buttonLoading, setButtonLoading] = useState(false);
-  const [endPoint, setEndPoint] = useState(5);
-  const cur = tickets.slice(0, endPoint);
-
-  const handleSetEndPoint = () => {
-    setButtonLoading(true);
-    setTimeout(() => {
-      setEndPoint(endPoint + 5);
-      setButtonLoading(false);
-    }, 800);
-  };
-
+const TicketList = ({ state, displayTickets }) => {
+  const [ready, setReady] = useState(false);
+  const cur = displayTickets.slice(0, state.endPoint);
+  setTimeout(() => {
+    setReady(true);
+  }, 100);
   return (
     <div className="ticket-list">
-      {cur.map((ticket) => (
-        <Ticket ticket={ticket} key={Math.random() * Date.now()} />
-      ))}
-      <FiveMoreButton onClick={handleSetEndPoint} buttonLoading={buttonLoading} />
+      {ready && (
+        <div>
+          {cur.map((ticket, i) => (
+            <Ticket ticket={ticket} key={i} />
+          ))}
+          {displayTickets.length && <FiveMoreButton />}
+        </div>
+      )}
     </div>
   );
 };
 
-export default TicketList;
+const mapStateToProps = (state) => {
+  return { state };
+};
+
+export default connect(mapStateToProps)(TicketList);

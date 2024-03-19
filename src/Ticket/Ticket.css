@@ -1,335 +1,274 @@
-@font-face {
-    font-family: "Light";
-    src: url("OpenSans-Light.ttf") format("truetype");
+@media screen and (max-width: 960px) {
+  .ticket {
+    width: 90%;
+    max-width: 502px;
+    min-width: 320px;
+
+    height: 184px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-weight: normal;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: white;
+    border-radius: 4px;
+    display: block;
   }
 
-@font-face {
-    font-family: "Medium";
-    src: url("OpenSans-Medium.ttf") format("truetype");
+  .ticket__title {
+    width: 90%;
+    height: 36px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .ticket__price {
+    font-size: 24px;
+    line-height: 24px;
+    width: 147px;
+    color: rgba(33, 150, 243, 1);
+    margin: auto 0 auto 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-weight: 900;
+  }
+  .ticket__logo {
+    height: 36px;
+    width: 110px;
+  }
+
+  .ticket__segment {
+    width: 90%;
+    height: 38px;
+    margin: 16px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .ticket__route {
+    width: 33%;
+    min-width: 100px;
+    height: 38px;
+  }
+
+  .ticket__cities-header {
+    width: 140px;
+    height: 18px;
+    color: rgba(160, 176, 185, 1);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+  }
+  .ticket__cities-time {
+    width: 140px;
+    height: 20px;
+    color: rgba(74, 74, 74, 1);
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .ticket__travel-time {
+    width: 140px;
+    height: 38px;
+    color: rgba(160, 176, 185, 1);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+
+    width: 33%;
+    min-width: 100px;
+  }
+
+  .ticket__travel-time-header {
+    width: 140px;
+    height: 18px;
+    color: rgba(160, 176, 185, 1);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .ticket__travel-time-info {
+    width: 140px;
+    height: 20px;
+    color: rgba(74, 74, 74, 1);
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .ticket__transfer {
+    width: 140px;
+    height: 38px;
+    color: rgba(160, 176, 185, 1);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    width: 33%;
+    min-width: 100px;
+  }
+
+  .ticket__transfer-count {
+    width: 140px;
+    height: 18px;
+    color: rgba(160, 176, 185, 1);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+  }
+  .ticket__transfer-cities {
+    width: 140px;
+    height: 20px;
+    color: rgba(74, 74, 74, 1);
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
+@media screen and (min-width: 960px) {
+  .ticket {
+    width: 502px;
+    height: 184px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: white;
+    border-radius: 4px;
+    display: block;
+  }
 
+  .ticket__title {
+    width: 462px;
+    height: 36px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
+  .ticket__price {
+    font-size: 24px;
+    line-height: 24px;
+    width: 147px;
+    color: rgba(33, 150, 243, 1);
+    margin: auto 0 auto 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+  .ticket__logo {
+    height: 36px;
+    width: 110px;
+  }
 
+  .ticket__segment {
+    width: 462px;
+    height: 38px;
+    margin: 16px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
+  .ticket__route {
+    width: 140px;
+    height: 38px;
+  }
 
+  .ticket__cities-header {
+    width: 140px;
+    height: 18px;
+    color: rgba(160, 176, 185, 1);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+  }
+  .ticket__cities-time {
+    width: 140px;
+    height: 20px;
+    color: rgba(74, 74, 74, 1);
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
 
+  .ticket__travel-time {
+    width: 140px;
+    height: 38px;
+    color: rgba(160, 176, 185, 1);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+  }
 
+  .ticket__travel-time-header {
+    width: 140px;
+    height: 18px;
+    color: rgba(160, 176, 185, 1);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .ticket__travel-time-info {
+    width: 140px;
+    height: 20px;
+    color: rgba(74, 74, 74, 1);
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+  }
 
+  .ticket__transfer {
+    width: 140px;
+    height: 38px;
+    color: rgba(160, 176, 185, 1);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+  }
 
+  .ticket__transfer-count {
+    width: 140px;
+    height: 18px;
+    color: rgba(160, 176, 185, 1);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+  }
+  .ticket__transfer-cities {
+    width: 140px;
+    height: 20px;
+    color: rgba(74, 74, 74, 1);
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 
-
-
-
-
-
-@media  screen and (max-width: 960px) {
-    .ticket {
-        width: 90%;
-        max-width: 502px;
-        min-width: 320px;
-        
-        height: 184px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-    
-        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
-        font-family: "Light", Arial, Helvetica, sans-serif;
-        box-sizing: border-box;
-        border: 1px solid rgba(0, 0, 0, 0);
-        background-color: white;
-        border-radius: 4px;
-        display: block;
-    
-    }
-    
-    .ticket__title {
-        width: 90%;
-        height: 36px;
-        margin: 20px auto 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    
-    
-    
-    }
-    
-    .ticket__price {
-        font-size: 24px;
-        line-height: 24px;
-        width: 147px;
-        color: rgba(33, 150, 243, 1);
-        margin: auto 0 auto 0;
-        font-family: "Medium", Arial, Helvetica, sans-serif;
-        font-weight: 900;
-        
-    }
-    .ticket__logo {
-        height: 36px;
-        width: 110px;
-
-    }
-    
-    .ticket__segment {
-        width: 90%;
-        height: 38px;
-        margin: 16px auto 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .ticket__route {
-    
-        width: 33%;
-        min-width: 100px;
-        height: 38px;
-        
-    
-    
-    }
-    
-    .ticket__cities-header {
-        width: 140px;
-        height: 18px;
-        color: rgba(160, 176, 185, 1);
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: 0.5px;
-    
-    }
-    .ticket__cities-time {
-    
-        width: 140px;
-        height: 20px;
-        color: rgba(74, 74, 74, 1);
-        font-family: "Medium" , Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 20px;
-    
-    }
-    
-    .ticket__travel-time {
-        width: 140px;
-        height: 38px;
-        color: rgba(160, 176, 185, 1);
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: 0.5px;
-
-        width: 33%;
-        min-width: 100px;
-    
-    }
-    
-    .ticket__travel-time-header {
-        width: 140px;
-        height: 18px;
-        color: rgba(160, 176, 185, 1);
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
-    }
-    .ticket__travel-time-info {
-        width: 140px;
-        height: 20px;
-        color: rgba(74, 74, 74, 1);
-        font-family: "Medium", Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 0.5px;
-    }
-    
-    .ticket__transfer {
-        width: 140px;
-        height: 38px;
-        color: rgba(160, 176, 185, 1);
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
-        width: 33%;
-        min-width: 100px;
-    
-    }
-    
-    .ticket__transfer-count {
-        width: 140px;
-        height: 18px;
-        color: rgba(160, 176, 185, 1);
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: 0.5px;
-    }
-    .ticket__transfer-cities {
-        width: 140px;
-        height: 20px;
-        color: rgba(74, 74, 74, 1);
-        font-family: "Medium", Arial, Helvetica, sans-serif;
-    
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 20px;
-    }
-}
-
-
-
-
-
-
-@media  screen and (min-width: 960px) {
-    .ticket {
-        width: 502px;
-        height: 184px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-    
-        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
-        font-family: "Light", Arial, Helvetica, sans-serif;
-        box-sizing: border-box;
-        border: 1px solid rgba(0, 0, 0, 0);
-        background-color: white;
-        border-radius: 4px;
-        display: block;
-    
-    }
-    
-    .ticket__title {
-        width: 462px;
-        height: 36px;
-        margin: 20px auto 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    
-    
-    
-    }
-    
-    .ticket__price {
-        font-size: 24px;
-        line-height: 24px;
-        width: 147px;
-        color: rgba(33, 150, 243, 1);
-        margin: auto 0 auto 0;
-        font-family: "Medium", Arial, Helvetica, sans-serif;
-        font-weight: 900;
-        
-    }
-    .ticket__logo {
-        height: 36px;
-        width: 110px;
-
-    }
-    
-    .ticket__segment {
-        width: 462px;
-        height: 38px;
-        margin: 16px auto 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .ticket__route {
-    
-        width: 140px;
-        height: 38px;
-    
-    
-    }
-    
-    .ticket__cities-header {
-        width: 140px;
-        height: 18px;
-        color: rgba(160, 176, 185, 1);
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: 0.5px;
-    
-    }
-    .ticket__cities-time {
-    
-        width: 140px;
-        height: 20px;
-        color: rgba(74, 74, 74, 1);
-        font-family: "Medium" , Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 20px;
-    
-    }
-    
-    .ticket__travel-time {
-        width: 140px;
-        height: 38px;
-        color: rgba(160, 176, 185, 1);
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: 0.5px;
-    
-    }
-    
-    .ticket__travel-time-header {
-        width: 140px;
-        height: 18px;
-        color: rgba(160, 176, 185, 1);
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
-    }
-    .ticket__travel-time-info {
-        width: 140px;
-        height: 20px;
-        color: rgba(74, 74, 74, 1);
-        font-family: "Medium", Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 0.5px;
-    }
-    
-    .ticket__transfer {
-        width: 140px;
-        height: 38px;
-        color: rgba(160, 176, 185, 1);
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
-    
-    }
-    
-    .ticket__transfer-count {
-        width: 140px;
-        height: 18px;
-        color: rgba(160, 176, 185, 1);
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: 0.5px;
-    }
-    .ticket__transfer-cities {
-        width: 140px;
-        height: 20px;
-        color: rgba(74, 74, 74, 1);
-        font-family: "Medium", Arial, Helvetica, sans-serif;
-    
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 20px;
-    }
-
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
